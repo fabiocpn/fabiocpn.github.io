@@ -1,0 +1,146 @@
+BODY {
+	background-color: White;
+/* font-family: Verdana, Geneva, Arial, Helvetica, sans-serif, sans-serif; */
+	font-family: Georgia, Helvetica, Arial, Verdana;
+	font-size: 14px;
+	color: #666;
+	word-spacing:1.5px;
+	line-height:30px;
+
+}
+
+A {
+	color: #0F4FA8;
+	text-decoration: none;
+}
+
+A:HOVER {
+	text-decoration: underline;
+}
+
+img {
+/*	background:#ccc; */
+	border:2px solid #8C8C8C; 
+	color:#303030; 
+	display:inline; 
+	padding:0px;
+}
+
+
+.side {
+	font-size: 20px;
+	line-height: 32px;
+	font-family: Georgia;
+	font-weight: bold;	
+	border-right: 1px solid #eee;
+
+}
+
+.side a {
+	color:FF5600; 
+	font-weight: normal;	
+}
+
+.top {
+	font-size: 36px;
+	font-family: Georgia;
+	font-weight: normal;
+}
+
+.bottom {
+	font-size: 12px;
+<!--	font-family: "Lucida Grande"; -->
+	font-weight: italic;
+	color: #666;
+}
+
+
+.main {
+	font-size: 15px;
+/*	font-family: "Lucida Grande"; */
+	line-height: 20px;
+	color: #666;
+}
+
+#sidebar {
+	border-right:2px solid #ddd;
+	padding-right:30px; 
+	font-size: 20px;
+	line-height: 32px;
+	font-family: Georgia;
+/*	font-weight: bold;	*/
+	color: #666; 	
+}
+
+#sidebar a {
+	color:FF5600; 
+	font-weight: normal;	
+	background-color: White;
+}
+
+#main {
+	font-size: 15px;
+/*	font-family: "Lucida Grande"; */
+	line-height: 22px;
+	color: #666;
+	padding-left:20px; 
+}
+
+.head-big {
+	font-size: 20px;
+	font-family: Georgia;
+	line-height: 26px;
+	color: #666;
+	font-weight: normal;
+	border-bottom:1px solid #aaa;
+
+}
+
+.head-big  a{
+	color: #666;	
+}
+
+.head-big a:HOVER {
+	text-decoration: none;
+}
+
+.head-medium {
+	font-size: 16px;
+/*	font-family: "Lucida Grande"; */
+	line-height: 22px;
+	color: #666;
+	font-weight: bold;
+}
+
+.head-medium-software {
+	font-size: 18px;
+/*	font-family: "Lucida Grande"; */
+	line-height: 24px;
+	color: #666;
+	font-weight: normal;
+}
+
+.head {
+	font-size: 15px; 
+/*	font-family: "Lucida Grande"; */
+	line-height: 22px;
+	color: #666;
+	font-weight: bold;
+}
+
+.head-small {
+/*	font-size: 14px; */
+/*	font-family: "Lucida Grande"; */
+/*	line-height: 20px; */
+/*	color: #666; */
+	font-weight: bold;	
+}
+
+.indented {
+/*	margin-left: 10px; 
+	margin-top: 30px; */
+	font-size: 12px;
+	margin-left: 14px;
+}
+
+
