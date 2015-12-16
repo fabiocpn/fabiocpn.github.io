@@ -20,10 +20,10 @@ A:HOVER {
 
 img {
 /*	background:#ccc; */
-	border:2px solid #8C8C8C; 
+	border:0px solid #8C8C8C; 
 	color:#303030; 
 	display:inline; 
-	padding:0px;
+	padding:2px;
 }
 
 
