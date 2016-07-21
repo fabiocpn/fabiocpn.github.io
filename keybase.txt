@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/fnavarro
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://fabionavarro.org
+  * I am fnavarro (https://keybase.io/fnavarro) on keybase.
+  * I have a public key ASBkaY4S40Pf3xXC9XOIFsOpeqw0XKVqJ_zabegUvb8Inwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012064698e12e343dfdf15c2f5738816c3a97aac345ca56a27fcda6de814bdbf089f0a",
+            "host": "keybase.io",
+            "kid": "012064698e12e343dfdf15c2f5738816c3a97aac345ca56a27fcda6de814bdbf089f0a",
+            "uid": "0bd33f913cffdd75f4fb494809818119",
+            "username": "fnavarro"
+        },
+        "service": {
+            "hostname": "fabionavarro.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1469110624,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1469110554,
+        "hash": "16d5b87e0d6e0f52fedb220f5d3d14422aa76b491dfb5c86013951b9ff08fd86c1dccf3e094ee08f01fbe87d95f5ad6f3b2cd46cd7ef11497e0a59bf96824a10",
+        "seqno": 536081
+    },
+    "prev": "d9fffddf5af438d6993e669d685b633088b0f7b9c4b65a0dc9d0a287d0dcf19e",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZGmOEuND398VwvVziBbDqXqsNFylaif82m3oFL2/CJ8Kp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNjQ2OThlMTJlMzQzZGZkZjE1YzJmNTczODgxNmMzYTk3YWFjMzQ1Y2E1NmEyN2ZjZGE2ZGU4MTRiZGJmMDg5ZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjQ2OThlMTJlMzQzZGZkZjE1YzJmNTczODgxNmMzYTk3YWFjMzQ1Y2E1NmEyN2ZjZGE2ZGU4MTRiZGJmMDg5ZjBhIiwidWlkIjoiMGJkMzNmOTEzY2ZmZGQ3NWY0ZmI0OTQ4MDk4MTgxMTkiLCJ1c2VybmFtZSI6ImZuYXZhcnJvIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJmYWJpb25hdmFycm8ub3JnIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNiJ9LCJjdGltZSI6MTQ2OTExMDYyNCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDY5MTEwNTU0LCJoYXNoIjoiMTZkNWI4N2UwZDZlMGY1MmZlZGIyMjBmNWQzZDE0NDIyYWE3NmI0OTFkZmI1Yzg2MDEzOTUxYjlmZjA4ZmQ4NmMxZGNjZjNlMDk0ZWUwOGYwMWZiZTg3ZDk1ZjVhZDZmM2IyY2Q0NmNkN2VmMTE0OTdlMGE1OWJmOTY4MjRhMTAiLCJzZXFubyI6NTM2MDgxfSwicHJldiI6ImQ5ZmZmZGRmNWFmNDM4ZDY5OTNlNjY5ZDY4NWI2MzMwODhiMGY3YjljNGI2NWEwZGM5ZDBhMjg3ZDBkY2YxOWUiLCJzZXFubyI6MTEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAthIlLXyjDTA34jRCHdyG+cK21zfhDKvz+5UuMwAITfbwFHKPKHyjbkxQucOh3H34GJKwFoXLQNSX1rTigO5pD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBrKi7JENAuSEQ/bwY4JCe1G5Lg/uMMf8NaDECYqu8Rlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fnavarro
+
+==================================================================
