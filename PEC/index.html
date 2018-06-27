@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<title>PEC Website</title>
+<meta charset="iso-8859-1">
+<link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap.css" type="text/css">
+<!-- <link rel="stylesheet" href="styles/layout.css" type="text/css">-->
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<header id="header" class="clear">
+  <!--  <div id="hgroup">
+  <img src="images/PsychENCODE_banner-2.jpg" align = "middle" width ="100%" height="100%" alt="">
+
+  </div>-->
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+    <a class="navbar-brand" href="#"><img src="Brain.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Adult.PsychENCODE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav">
+          <!-- <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#Integrative">Integrative Analysis</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Derived">Derived Data Types</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Pipeline">Pipeline-Processing Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Raw">Raw Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<body style="padding-top: 70px;">
+
+<div class="container shadow-sm p-3 mb-5 bg-white rounded" >
+
+<!-- content -->
+<div class="card">
+
+    <!-- content body -->
+     <section id="shout">
+      <div class="card-header"><h1>PsychENCODE Adult Integrative Capstone Analysis</h1></div>
+      <div class="card-body">
+        <figure class="text-center">
+            <img src="Pyramid_Brain.png" class="figure-img img-fluid rounded" width="70%" height="70%" alt="">
+        </figure>
+  <!--    <p>
+  <ol>
+            <li><a href="#Integrative">Integrative Model:</a><p>An integration of data across the capstone projects to build a model taking QTLs as inputs and providing both phenotype predictions as well as functional modules involved. </p></li>
+            <li><a href="#Derived">Derived Data Types:</a><p>Enhancer lists, eQTL and cQTL maps, DEX genes, gene co-expression modules, PCA/RCA-based clustering of RNA-seq data and epigenetic data, decomposition and deconvolution of cell-type-specific RNA-seq. </p></li>
+            <li><a href="#Pipeline">Pipeline-Processing Results:</a><p>RNA-seq quantifications, ChIP-seq signals and peaks, Brain Transcriptionally Active Regions (TARs), Imputed Genotypes (secured),and Phenotypes. </p></li>
+            <li><a href="#Raw">Raw Data (Secure Access):</a><p>Alignment files for the various experiments, chip arrays for the SNP genotyping assays and phenotype metadata for the different studies under the consortium; links provided are for the secured data sources on Synapse.</p></li>
+  </ol>
+
+      </p>-->
+    </section>
+    <!-- main content -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<p>Additional details on data generation and analysis: <ul><li><a href="" target="_blank">Paper supplement</a></p></li></ul>
+    </div>
+
+<div class="col-sm">
+<p>Bulk download of all the data on this webpage is available: <ul><li><a href="" download> PEC Adult Integrative Datasets <span class="badge badge-light">tgz</span></a></p></li></ul>
+</div>
+
+
+<div class="col-sm">
+<p>For interactive query and genome browser options: <ul><li><a href="http://psychinteractive.gersteinlab.org"> PEC Interactive Portal</a></p></li></ul>
+</div>
+  </div>
+</div>
+</div>
+<br>
+
+<br><br><br>
+<!-- article 4 -->
+<div class="card">
+
+  <div class="card-header">
+    <h1 id="Integrative" class="text-center" style="padding-top: 100px; margin-top: -100px;">Integrative Analysis</h1>
+  </div>
+  <div class="card-body">
+  <p>An integration of data across the capstone projects to build a model taking QTLs as inputs and providing both phenotype predictions as well as functional modules involved. </p>
+  <!-- article 1 -->
+    <h3>Integrative Analysis for each brain phenotype</h3>
+
+  <!--  <img src="images/demo/80x80.gif" alt=""> -->
+
+    <ol>
+      <li><p>Integrative model parameters for all phenotypes:</p>
+        <ul>
+          <li><p>Logistic Regression-Genotype: <ul><li><a href="Datasets/Integrative/ModelParams/LR-gen.xlsx" download> LR-gen  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+          </li>
+          <li><p>Logistic Regression-Transcriptome: <ul><li><a href="Datasets/Integrative/ModelParams/LR-trans.xlsx" download> LR-trans  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+          </li>
+          <li><p>Conditional Restricted Boltzmann Machine: <ul><li><a href="Datasets/Integrative/ModelParams/cRBM.xlsx" download> cRBM  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+          </li>
+          <li><p>Deep Structured Phenotype Network with Imputation: <ul><li><a href="Datasets/Integrative/ModelParams/DSPN-Imput.xlsx" download> DSPN-Imput  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+          </li>
+          <li><p>Modular Deep Structured Phenotype Network (uses WGCNA modules shared in this section): <ul><li><a href="Datasets/Integrative/ModelParams/DSPN-mod.xlsx" download> DSPN-mod  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+          </li>
+          <li><p>Full Deep Structured Phenotype Network: <ul><li><a href="Datasets/Integrative/ModelParams/DSPN-full.xlsx" download> DSPN-full  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+          </li>
+        </ul>
+      </li>
+      <li><p>Multi-level functional enrichment analysis (DSPN-mod) and Weighted Gene Co-Expression Analysis (WGCNA) modules:</p>
+        <ul>
+          <li>
+            <p><a href="Datasets/Integrative/ModelParams/DSPN_prioritized_module_enrichments.xlsx" download>Pathway and cell-type enrichment scores  <span class="badge badge-light">xlsx</span></a></p>
+          </li>
+          <li>
+            <p><a href="Datasets/Integrative/ModelParams/WGCNA_modules_ensembl_ids.xlsx" download>WGCNA modules, Ensembl IDs  <span class="badge badge-light">xlsx</span></a></p>
+          </li>
+          <li>
+            <p><a href="Datasets/Integrative/ModelParams/WGCNA_modules_hgnc_ids.xlsx" download>WGCNA modules, HGNC IDs  <span class="badge badge-light">xlsx</span></a></p>
+          </li>
+       </ul>
+      </li>
+      <li><p>Transcription Factor - Target Gene - Enhancer linkages:
+        <ul>
+          <li>Reference linkages based on TF binding site analysis (before Elastic Net Regression): <ul><li><a href="Datasets/Integrative/Reference_TF_Network.csv" download> Reference TF - target gene - enhancer links  <span class="badge badge-light">csv</span></a></li></ul>
+          </li>
+          <li>Final linkages in Gene Regulatory Network (with Elastic Net regression weight cutoff = 0.1): <ul><li><a href="Datasets/Integrative/TF-target-linkages_ElasticNet_Cutoff_0.1.csv" download> Final TF - target gene - enhancer links  <span class="badge badge-light">csv</span></a></p></li></ul></li>
+          <li>Mean square error for each gene from the Elastic Net Regression (only including genes with Elastic net predictions):<ul><li><a href="Datasets/Integrative/Elastic_net_Mean_square_error.csv" download> Mean Square Errors  <span class="badge badge-light">csv</span></a></p></li></ul>
+          </li>
+        </ul>
+      </li>
+      <li><p>HiC-derived Enhancer - Gene linkages: <ul><li><a href="Datasets/Integrative/HiC_EP_linkages.csv" download> HiC Enhancer - Gene linkages  <span class="badge badge-light">csv</span></a></p></li></ul>
+      </li>
+      <li><p>Schizophrenia-associated genes:
+          <ul>
+            <li>
+            <a href="Datasets/Integrative/SCZ_High_Confidence_Gene_List.csv" download> SCZ High-confidence Gene List  <span class="badge badge-light">csv</span></a>
+            </li>
+            <li>
+            <a href="Datasets/Integrative/SCZ_Risk_Gene_List.csv" download> SCZ Risk Gene List  <span class="badge badge-light">csv</span></a>
+            </li>
+          </ul>
+          </p>
+      </li>
+    </ol>
+</div>
+</div>
+</section>
+<!-- ********************************************************************************************************************************* -->
+<!-- article 3 -->
+<br><br><br>
+
+<div class="card">
+
+  <div class="card-header"><h1 id="Derived" class="center page-header" style="padding-top: 100px; margin-top: -100px;">Derived Data Types</h1></div>
+  <div class="card-body">
+  <p>Enhancer lists, eQTL and cQTL maps, DEX genes, gene co-expression modules, PCA/RCA-based clustering of RNA-seq data and epigenetic data, decomposition and deconvolution of cell-type-specific RNA-seq. </p>
+  <section id="services" class="clear">
+  <article class="subtitle">
+  <!--   <h3>QTL queries</h3>
+    <form name="eQTLform" action="http://adult.psychencode.org/eQTLscript.py" method="post">
+    <div align="center">
+      <br>
+      <h4>Expression QTL (eQTL)</h4>
+        <p>Enter chromosome region (in format chr#:start-end): <input type="text" size="40" value="chr3:28760000-28770000" name="eregion" > <input type="submit" value="Submit"></p>
+      <br>
+    </div>
+  </form>
+    <form name="cQTLform" action="http://adult.psychencode.org/cQTLscript.py" method="post">
+    <div align="center">
+      <br>
+      <h4>Chromatin QTL (cQTL)</h4>
+        <p>Enter chromosome region (in format chr#:start-end): <input type="text" size="40" value="chr4:16234000-16235000" name="cregion" > <input type="submit" value="Submit"></p>
+      <br>
+    </div>
+    </form>
+    <form name="isoQTLform" action="http://adult.psychencode.org/isoQTLscript.py" method="post">
+    <div align="center">
+      <br>
+      <h4>Isoform QTL (isoQTL)</h4>
+        <p>Enter chromosome region (in format chr#:start-end): <input type="text" size="40" value="chr3:30695000-30696000" name="isoregion" > <input type="submit" value="Submit"></p>
+      <br>
+    </div>
+    </form>
+    <form name="fQTLform" action="http://adult.psychencode.org/fQTLscript.py" method="post">
+    <div align="center">
+      <br>
+      <h4>Cell Fraction QTL (fQTL)</h4>
+        <p>Enter chromosome region (in format chr#:start-end): <input type="text" size="40" value="chr1:1307000-1308000" name="fregion" > <input type="submit" value="Submit"></p>
+      <br>
+    </div>
+    </form>-->
+  </article>
+  </section>
+  <!-- article 1 -->
+  <section id="services" class="clear">
+  <article class="subtitle">
+    <h3>PsychENCODE enhancer list and annotations</h3>
+    <p>PsychENCODE enhancer set for the DLPFC: <ul><li><a href="Datasets/Derived/PEC_enhancers.bed" download> PEC Enhancers <span class="badge badge-light">bed</span></a></p></li></ul>
+<!--    <p>To view the enhancers in the UCSC Genome browser (opens link to Genome Browser in new tab): <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubClear=http://adult.psychencode.org/UCSChub/hub.txt" target="_blank"> PEC DLPFC enhancers (hg19) &raquo;</a> and  <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&hubClear=http://adult.psychencode.org/UCSChub/hub.txt" target="_blank"> PEC DLPFC enhancers (hg38 assembly) &raquo;</a> </p>
+-->
+  </article>
+  </section>
+  <!-- article 2 -->
+  <section id="services" class="clear">
+  <article class="subtitle">
+    <h3>QTL Maps</h3>
+    <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+    <p> Expression QTLs (eQTLs), chromatin QTLs (cQTLs), isoform expression QTLs (isoQTLs), and cell fraction QTLs (fQTLs). </p>
+    <ol>
+      <li>
+        <p><a href="Datasets/Derived/QTLs/capstone4.eQTL.significant.txt" download> List of eQTLs <span class="badge badge-light">txt</span></a></p>
+
+      </li>
+
+      <li>
+        <p><a href="Datasets/Derived/QTLs/capstone4.cQTL.significant.txt" download> List of cQTLs <span class="badge badge-light">txt</span></a></p>
+
+      </li>
+      <li>
+        <p><a href="Datasets/Derived/QTLs/capstone4.isoQTL.significant.txt" download> List of isoQTLs <span class="badge badge-light">txt</span></a></p>
+
+      </li>
+      <li>
+        <p><a href="Datasets/Derived/QTLs/capstone4.fQTL.significant.txt" download> List of fQTLs <span class="badge badge-light">txt</span></a></p>
+
+      </li>
+    </ol>
+  </article>
+  </section>
+    <!-- article 3 -->
+    <section id="services" class="clear">
+    <article class="subtitle">
+      <h3>Differentially Expressed (DEX) and Spliced Genes/Transcripts and Gene/Isoform Co-expression modules</h3>
+      <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+      <p>This resource provides sets of genes that exhibit significantly different expression levels between different groups of samples. </p>
+      <ol>
+        <li>
+          <p>Brain-specific DEX genes across all PsychENCODE samples relative to the non-brain tissues in GTEx: <br><a href="" download> Brain DEX genes <span class="badge badge-light">tsv</span></a></p>
+
+        </li>
+
+        <li>
+          <p>Disorder DEX Genes and Transcripts, and Differentially Spliced Genes of PsychENCODE samples (from Capstone #1):
+            <ul>
+              <li><a href="Datasets/Derived/DEXgenes_CoExp/Capstone1_DEX_Genes.csv" download> Disorder DEX Genes  <span class="badge badge-light">csv</span></a>
+              </li>
+              <li><a href="Datasets/Derived/DEXgenes_CoExp/Capstone1_DEX_Transcripts.csv" download> Disorder DEX Transcripts  <span class="badge badge-light">csv</span></a>
+              </li>
+              <li><a href="Datasets/Derived/DEXgenes_CoExp/Capstone1_DifferentialSplicing.csv" download> Differentially Spliced Genes  <span class="badge badge-light">csv</span></a>
+              </li>
+            </ul>
+          </p>
+
+        </li>
+
+        <li>
+          <p>Gene and Isoform Co-Expression Modules calculated using Weighted Gene Co-Expression Analysis (WGCNA) on the PEC RNA-seq samples (from Capstone #1):
+           <ul>
+            <li><a href="Datasets/Derived/DEXgenes_CoExp/Capstone1_Gene_Modules.csv" download> Gene Co-expression Modules  <span class="badge badge-light">csv</span></a>
+            </li>
+            <li><a href="Datasets/Derived/DEXgenes_CoExp/Capstone1_Isoform_Modules.csv" download> Isoform Co-expression Modules  <span class="badge badge-light">csv</span></a>
+            </li>
+          </ul>
+          </p>
+
+        </li>
+      </ol>
+    </article>
+    </section>
+      <!-- article 4 -->
+
+
+      <!-- article 5 -->
+      <!-- <section id="services" class="clear">
+      <article class="subtitle">
+        <h3> RCA of RNA-seq Data</h3>
+        <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt="">
+        <p> RCA clustering on the RNA-seq and H3K27ac ChIP-seq datasets: </p>
+        <ol>
+
+          <li>
+          <p>RCA of tissue samples: <a href=""> Tissue PCA &raquo;</a></p>
+          </li>
+          <li>
+          <p>RCA of H3K27ac samples: <a href=""> H3K27ac RCA &raquo;</a></p>
+
+          </li>
+        </ol>
+      </article>
+      </section> -->
+
+      <!-- article 6 -->
+      <section id="services" class="clear">
+      <article class="subtitle">
+
+        <h3>Bulk RNA-seq Decomposition and Deconvolution with Single-cell Data</h3>
+        <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+        <ol>
+          <li>
+
+            <p>Brain Cell-type Marker Genes: <ul><li> <p><a href="Datasets/Derived/SC_Decomp/Single_cell_markergenes.xlsx" download> Marker Genes  <span class="badge badge-light">xlsx</span></a></p></li></ul>
+
+          </li>
+          <li>
+
+            <p>Single-cell Expression Data: <ul><li>  <p><a href="Datasets/Derived/SC_Decomp/Single_cell_expression.tsv" download> Single-Cell Expression <span class="badge badge-light">tsv</span></a></p></li></ul>
+
+          </li>
+          <li>
+            <p>Cell Fractions Derived from Deconvolution:</p>
+            <ul>
+              <li> <p><a href="Datasets/Derived/SC_Decomp/Cell_fractions_Raw.xlsx" download> Raw Fractions  <span class="badge badge-light">xlsx</span></a>
+
+              </li>
+              <li> <p><a href="Datasets/Derived/SC_Decomp/Cell_fractions_Normalized.xlsx" download> Normalized Fractions  <span class="badge badge-light">xlsx</span></a>
+
+              </li>
+            </ul>
+
+          </li>
+          <li>
+            <p>Decomposition through Non-negative Matrix Factorization (NMF):</p>
+            <ul>
+              <li> <p><a href="Datasets/Derived/SC_Decomp/NMF_comp.xlsx" download> NMF Components  <span class="badge badge-light">xlsx</span></a>
+
+              </li>
+              <li> <p><a href="Datasets/Derived/SC_Decomp/NMF_coef.xlsx" download> NMF Component Fractions  <span class="badge badge-light">xlsx</span></a>
+
+              </li>
+            </ul>
+
+          </li>
+        </ol>
+      </article>
+      </section>
+</article>
+</div></div>
+<br><br><br>
+<!-- ******************************************************************************************************************************* -->
+<div class="card">
+      <article class="one_fourth">
+  <div class="card-header"><h1 id="Pipeline" class="center" style="padding-top: 100px; margin-top: -100px;">Pipeline-Processing Results</h1></div>
+  <div class="card-body">
+
+      <!-- article 2 -->
+
+        
+        <p>RNA-seq quantifications, ChIP-seq signals and peaks, Brain Transcriptionally Active Regions (TARs), Imputed Genotypes (secured),and Phenotypes. </p>
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>RNA-seq signals and peaks (Synapse access required)</h3>
+        <!--  <img src="images/demo/80x80.gif" alt=""> -->
+        <p>Signal tracks (.bigwig) and peak (.bedgraph) files calculated using PsychENCODE pipeline, available on Synapse: <ul><li><a href="https://www.synapse.org/#!Synapse:syn12115368/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEyMTE1MzY4IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJhc3NheSIsICJmYWNldFZhbHVlcyI6WyJybmFTZXEiXX0seyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJmaWxlRm9ybWF0IiwgImZhY2V0VmFsdWVzIjpbImJpZ3dpZyIsImJlZGdyYXBoIl19XSwgImluY2x1ZGVFbnRpdHlFdGFnIjp0cnVlLCAiaXNDb25zaXN0ZW50Ijp0cnVlLCAib2Zmc2V0IjowLCAibGltaXQiOjI1fQ==" target="_blank"> RNA-seq Signal Tracks and Peak Files <span class="badge badge-danger">private</span></a> </p></li></ul>
+
+        </article>
+        </section>
+        <!-- article 2 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>ChIP-seq signals and peaks (Synapse access required)</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <p>Signal tracks (.bigwig) and peak (.bed, .narrowPeak, .gappedPeak, and .broadPeak) files calculated using PsychENCODE pipeline, available on Synapse: <ul><li><a href="https://www.synapse.org/#!Synapse:syn12115368/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEyMTE1MzY4IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJhc3NheSIsICJmYWNldFZhbHVlcyI6WyJDaElQU2VxIl19LHsiY29uY3JldGVUeXBlIjoib3JnLnNhZ2ViaW9uZXR3b3Jrcy5yZXBvLm1vZGVsLnRhYmxlLkZhY2V0Q29sdW1uVmFsdWVzUmVxdWVzdCIsICJjb2x1bW5OYW1lIjoiZmlsZUZvcm1hdCIsICJmYWNldFZhbHVlcyI6WyJiZWQiLCJiaWd3aWciLCJicm9hZFBlYWsiLCJnYXBwZWRQZWFrIiwibmFycm93UGVhayJdfV0sICJpbmNsdWRlRW50aXR5RXRhZyI6dHJ1ZSwgImlzQ29uc2lzdGVudCI6dHJ1ZSwgIm9mZnNldCI6MCwgImxpbWl0IjoyNX0=" target="_blank"> ChIP-seq Signal Tracks and Peak Files <span class="badge badge-danger">private</span></a> </p></li></ul>
+
+        </article>
+        </section>
+        <!-- article 3 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Cortex Transcriptionally Active Regions (TARs)</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+            Genome-wide TARs within each sample: <ul><li><a href="Datasets/Pipeline/TARs/all_TARs.txt.gz" download> Sample-specific Genome-wide TARs <span class="badge badge-light">tsv</span></a></li></ul>
+
+            </li>
+            <li>
+            Genome-wide TARs that are found within at least 70% of the individuals: <ul><li><a href="Datasets/Pipeline/TARs/all_TARs.txt.brainCortex.active.windows.bed" download> Consensus Genome-wide TARs <span class="badge badge-light">txt</span></a></li></ul>
+            </li>
+          </ol>
+        </article>
+        </section>
+        <!-- article 4 -->
+</div></article></div>
+<br><br><br>
+<!-- ****************************************************************************************************************************** -->
+<div class="card">
+      <article class="one_fourth">
+  <div class="card-header"> <h1 id="Raw" class="center" style="padding-top: 100px; margin-top: -100px;">Raw Data (Secure Access)</h1></div>
+  <div class="card-body">
+
+
+      <article class="one_fourth">
+       
+        <p>Alignment files for the various experiments, chip arrays for the SNP genotyping assays and phenotype metadata for the different studies under the consortium; external links are provided for the data sources on Synapse, and the GTEx consortium and Roadmap Epigenomics Consortium web portals.</p>
+        <!-- <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Raw Data Description</h3>
+
+          <p>Description of all datasets in different formats: <a href="https://www.synapse.org/#!Synapse:syn11969240">Description in .tsv format (link to www.synapse.org) &raquo;</a></p>
+        </article>
+        </section> -->
+        <!-- article 2 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Bulk and Single-cell RNA-seq alignment files</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+              <p>PsychENCODE Bulk RNA-seq alignment (.bam) files (link to Synapse; login-secured): <ul><li><a href="https://www.synapse.org/#!Synapse:syn12115368/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEyMTE1MzY4IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJhc3NheSIsICJmYWNldFZhbHVlcyI6WyJybmFTZXEiXX0seyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJmaWxlRm9ybWF0IiwgImZhY2V0VmFsdWVzIjpbImJhbSJdfV0sICJpbmNsdWRlRW50aXR5RXRhZyI6dHJ1ZSwgImlzQ29uc2lzdGVudCI6dHJ1ZSwgIm9mZnNldCI6MCwgImxpbWl0IjoyNX0=" target="_blank">RNA-seq files for alignment to both genome and transcriptome <span class="badge badge-danger">private</span></a></p></li></ul>
+            </li>
+            <li>
+              <p>GTEx Bulk RNA-seq alignment (.bam) files (link to GTEX consortium web portal; login-secured): <ul><li><a href="https://www.gtexportal.org/home/" target="_blank">RNA-seq alignment files <span class="badge badge-danger">private</span></a></p></li></ul>
+            </li>
+            <li>
+              <p>PsychENCODE Single-cell RNA-seq (.fastq) files (link to Synapse; login-secured): <ul><li><a href="https://www.synapse.org/#!Synapse:syn7118356" target="_blank">RNA-seq fastq files <span class="badge badge-danger">private</span></a></p></li></ul>
+            </li>
+
+          </ol>
+        </article>
+        </section>
+        <section id="services" class="clear">
+        <article class="subtitle">
+
+        <!-- article 3 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Bulk ChIP-seq alignment files</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+
+          <ol>
+
+            <li>
+              <p>PsychENCODE Bulk ChIP-seq alignment (.bam) files (link to Synapse; login-secured): <ul><li><a href="https://www.synapse.org/#!Synapse:syn12115368/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEyMTE1MzY4IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJhc3NheSIsICJmYWNldFZhbHVlcyI6WyJDaElQU2VxIl19LHsiY29uY3JldGVUeXBlIjoib3JnLnNhZ2ViaW9uZXR3b3Jrcy5yZXBvLm1vZGVsLnRhYmxlLkZhY2V0Q29sdW1uVmFsdWVzUmVxdWVzdCIsICJjb2x1bW5OYW1lIjoiZmlsZUZvcm1hdCIsICJmYWNldFZhbHVlcyI6WyJiYW0iXX1dLCAiaW5jbHVkZUVudGl0eUV0YWciOnRydWUsICJpc0NvbnNpc3RlbnQiOnRydWUsICJvZmZzZXQiOjAsICJsaW1pdCI6MjV9" target="_blank">ChIP-seq files for alignment to both genome and transcriptome <span class="badge badge-danger">private</span></a></p></li></ul>
+
+            </li>
+            <li>
+              <p>Roadmap Epigenomics Consortium (REMC) Bulk ChIP-seq alignment (.tagAlign) files (link to the REMC web portal): <ul><li><a href="http://egg2.wustl.edu/roadmap/data/byFileType/alignments/consolidated/" target="_blank">ChIP-seq alignment files <span class="badge badge-danger">private</span></a></p></li></ul>
+            </li>
+          </ol>
+        </article>
+        </section>
+        <!-- article 4 -->
+
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Genotypes</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+            <ol>
+            <li>
+              <p>Imputed genotypes and SNP arrays for individuals included in this analysis (link to Synapse; login-secured): <ul><li><a href="https://www.synapse.org/#!Synapse:syn12115368/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEyMTE1MzY4IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJhc3NheSIsICJmYWNldFZhbHVlcyI6WyJzbnBBcnJheSJdfV0sICJpbmNsdWRlRW50aXR5RXRhZyI6dHJ1ZSwgImlzQ29uc2lzdGVudCI6dHJ1ZSwgIm9mZnNldCI6MCwgImxpbWl0IjoyNX0=" target="_blank"> Imputed Genotypes <span class="badge badge-danger">private</span></a> </p></li></ul>
+            </li>
+            <li>
+              <p> Metadata for imputed genotypes (link to Synapse; login-secured): <ul><li><a href="https://www.synapse.org/#!Synapse:syn10909366/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEwOTA5MzY2IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJDYXBzdG9uZV80IiwgImZhY2V0VmFsdWVzIjpbInRydWUiXX1dLCAiaW5jbHVkZUVudGl0eUV0YWciOnRydWUsICJpc0NvbnNpc3RlbnQiOnRydWUsICJvZmZzZXQiOjAsICJsaW1pdCI6MjV9" target="_blank"> Metadata for Imputed Genotypes <span class="badge badge-danger">private</span></a></p></li></ul>
+            </li>
+
+          </ol>
+        </article>
+        </section>
+        <!-- article 5 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Phenotypes</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <p>Demographic and clinical information on individuals included in this analysis (link to Synapse; login-secured): <ul><li><a href="https://www.synapse.org/#!Synapse:syn12118229/tables/query/eyJzcWwiOiJTRUxFQ1QgKiBGUk9NIHN5bjEyMTE4MjI5IiwgInNlbGVjdGVkRmFjZXRzIjpbeyJjb25jcmV0ZVR5cGUiOiJvcmcuc2FnZWJpb25ldHdvcmtzLnJlcG8ubW9kZWwudGFibGUuRmFjZXRDb2x1bW5WYWx1ZXNSZXF1ZXN0IiwgImNvbHVtbk5hbWUiOiJDYXBzdG9uZV80IiwgImZhY2V0VmFsdWVzIjpbInRydWUiXX1dLCAiaW5jbHVkZUVudGl0eUV0YWciOnRydWUsICJpc0NvbnNpc3RlbnQiOnRydWUsICJvZmZzZXQiOjAsICJsaW1pdCI6MjV9" target="_blank"> Phenotype information <span class="badge badge-danger">private</span></a></p></li></ul>
+
+        </article>
+        </section>
+      </article>
+    </section>
+  </article>
+</div></article></div>
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ##########################################################################################
+    <section class="last clear">
+      <article class="two_third">
+        <h2>Lorum ipsum dolor</h2>
+        <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="http://www.os-templates.com/template-terms">website template licence</a>.</p>
+        <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more HTML5 templates visit <a href="http://www.os-templates.com/">free website templates</a>.</p>
+        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+      </article>
+      <article class="one_third lastbox">
+        <h2>Lorum ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque. Quisque non luctus sem.</p>
+        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+      </article>
+    </section>-->
+    <!-- / content body -->
+  </div>
+</div>
+<!-- footer 
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+-->
+    <div id="footer">
+      <div class="container">
+        
+      </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</body>
+</html>
